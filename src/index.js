@@ -16,7 +16,8 @@ import typeDefs from './graphql/typeDefs'
 const cache = new InMemoryCache()
 const client = new ApolloClient({
     cache,
-    link: withClientState({ resolvers, defaults, cache, typeDefs })
+    link: withClientState({ resolvers, defaults, cache, typeDefs }),
+    resolvers: {}
 })
 
 ReactDOM.render(

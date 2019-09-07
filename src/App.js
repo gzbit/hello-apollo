@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import Counter from './components/Counter'
+import AddTodo from './components/AddTodo'
+import Todos from './components/Todos'
 
 
 function App() {
@@ -10,19 +12,18 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Counter />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1 className="App-title">Welcome to React</h1>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+      </p>
       </header>
+      <div className="content">
+        <Counter />
+        </div> 
+      < div className="content"> 
+        <AddTodo />
+        <Todos />
+      </div>
     </div>
   );
 }
